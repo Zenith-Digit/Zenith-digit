@@ -7,7 +7,7 @@ import logo from "./logo.png";
 const Loading = () => {
   return (
     <div className='bg-black w-full h-screen items-center pt-32'>
-      <Image src={logo} alt={'logo'} className='logo w-2/6 mx-auto '/>
+      <Image src={logo} alt={'logo'} className='logo w-2/12 mx-auto '/>
     </div>
   )
 }
