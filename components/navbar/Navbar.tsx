@@ -11,7 +11,7 @@ import { SideNav } from '../sideNav/SideNav'
 const Navbar = () => {
   return (
     <nav className='bg-black border-b-4 border-[#00fefb] flex fixed w-full z-50'>
-        <div className='mx-auto p-4 w-1/2 ms-8'>
+        <div className='mx-auto p-4 w-1/2 ms-3 md:ms-8'>
             <Image src={darkLogo} alt='logo' width={60} height={60}/>
         </div>
         <div className='w-1/2 lg:flex justify-around mt-8 hidden'>
