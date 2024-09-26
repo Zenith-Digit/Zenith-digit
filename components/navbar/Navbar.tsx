@@ -20,7 +20,7 @@ const Navbar = () => {
             <Link href={'./'} className='text-[#00fefb] text-xl'>Accueil</Link>
             <Link href={'./'} className='text-[#00fefb] text-xl'>Accueil</Link>
         </div>
-        <div><SideNav /></div>
+        <div className='block lg:hidden'><SideNav /></div>
     </nav>
   )
 }
