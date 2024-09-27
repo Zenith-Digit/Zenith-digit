@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "../ui/images-slider";
 import { FlipWords } from "../ui/flip-words";
+import Image from "next/image";
+import logo from '@/components/loading/logo.png'
+
 
 export function Slider() {
   const images = [
@@ -27,7 +30,8 @@ export function Slider() {
         className="z-50 flex flex-col justify-center items-center"
       >
         <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-            <p>Zenith Digit</p>
+            <Image src={logo} alt={'logo'} className='logo w-24 md:w-32 lg:w-44 mx-auto m-4'/>
+            <p className="text-[#00fefb] m-2">Zenith Digit</p>
           <p>specialisé en <FlipWords words={['Developpement web', 'Developpement Mobile','Web design']} /></p>
         </motion.p>
         <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
