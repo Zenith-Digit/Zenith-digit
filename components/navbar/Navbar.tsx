@@ -15,12 +15,12 @@ const Navbar = () => {
             <Image src={darkLogo} alt='logo' width={60} height={60}/>
         </div>
         <div className='w-1/2 lg:flex justify-around mt-8 hidden'>
-            <Link href={'./'} className='text-[#00fefb] text-xl'>Accueil</Link>
-            <Link href={'./'} className='text-[#00fefb] text-xl'>Accueil</Link>
-            <Link href={'./'} className='text-[#00fefb] text-xl'>Accueil</Link>
-            <Link href={'./'} className='text-[#00fefb] text-xl'>Accueil</Link>
+            <Link href={'./'} className='text-[#00fefb] text-xl'>ACCUEIL</Link>
+            <Link href={'./apropos'} className='text-[#00fefb] text-xl'>À PROPOS</Link>
+            <Link href={'./'} className='text-[#00fefb] text-xl'>NOS SERVICES</Link>
+            <Link href={'./'} className='text-[#00fefb] text-xl'>CONTACT</Link>
         </div>
-        <div><SideNav /></div>
+        <div className=' lg:hidden'><SideNav /></div>
     </nav>
   )
 }
