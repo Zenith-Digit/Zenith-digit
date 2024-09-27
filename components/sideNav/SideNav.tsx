@@ -25,7 +25,6 @@ export function SideNav() {
       <SheetContent className="bg-black border-s border-[#00fefb] z-50">
         <SheetHeader className="flex-row justify-between w-full">
             <div>
-
             <Image src={logo} alt={"logo"} className="w-20"/>
             </div>
           <SheetClose asChild>
@@ -33,13 +32,32 @@ export function SideNav() {
           </SheetClose>
         </SheetHeader>
       <div className=' mt-8 '>
-            <Link href={'./'} className='text-[#00fefb] text-xl my-4'>Accueil</Link>
-            <br/>
-            <Link href={'./'} className='text-[#00fefb] text-xl my-4'>Accueil</Link>
-            <br/>
-            <Link href={'./'} className='text-[#00fefb] text-xl my-4'>Accueil</Link>
-            <br/>
-            <Link href={'./'} className='text-[#00fefb] text-xl my-4'>Accueil</Link>
+        <div className="my-4 border-t border-[#00fefb] py-2">
+
+        <SheetClose asChild>
+            <Link href={'/'} className='text-[#00fefb] text-xl my-14'>Accueil</Link>
+        </SheetClose>
+        </div>
+        <div className="my-4 border-t border-[#00fefb] py-2">
+
+        <SheetClose asChild>
+            <Link href={'/'} className='text-[#00fefb] text-xl'>Accueil</Link>
+        </SheetClose>
+        </div>
+      
+        <div className="my-4 border-t border-[#00fefb] py-2">
+
+        <SheetClose asChild>
+            <Link href={'/'} className='text-[#00fefb] text-xl'>Accueil</Link>
+        </SheetClose>
+        </div>
+        
+        <div className="my-4 border-t border-[#00fefb] py-2">
+
+        <SheetClose asChild>
+            <Link href={'/'} className='text-[#00fefb] text-xl'>Accueil</Link>
+        </SheetClose>
+        </div>
         </div>
         <SheetFooter>
         </SheetFooter>
