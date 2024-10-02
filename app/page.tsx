@@ -11,6 +11,7 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { SiAdobephotoshop } from "react-icons/si";
 import { IoIosDocument } from "react-icons/io";
 import { IoShareSocialSharp } from "react-icons/io5";
+import BlueCard from "@/components/cards/BlueCard";
 
 
 export default function Home() {
@@ -21,14 +22,14 @@ export default function Home() {
     <p className="text-white w-5/6 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas corrupti ullam modi temporibus distinctio, eius dolores voluptatum? Quisquam quae, eligendi debitis tenetur maxime nihil iure repellendus recusandae harum facilis? Incidunt.</p>
     {/* <Cards /> */}
     <div className="mt-20 w-5/6 mx-auto md:flex justify-between">
-    <Cadr titre={"Développement web"} icon={<TbWorldWww/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
-    <Cadr titre={"Développement mobile"} icon={<FaMobileScreenButton/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
-    <Cadr titre={"web design"} icon={<MdOutlineDesignServices/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
+    <BlueCard titre={"Développement web"} icon={<TbWorldWww/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
+    <BlueCard titre={"Développement mobile"} icon={<FaMobileScreenButton/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
+    <BlueCard titre={"web design"} icon={<MdOutlineDesignServices/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
     </div>
     <div className="mt-20 w-5/6 mx-auto md:flex justify-between">
-    <Cadr titre={"infographie"} icon={<SiAdobephotoshop/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
-    <Cadr titre={"bureautique"} icon={<IoIosDocument/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
-    <Cadr titre={"social propulcer"} icon={<IoShareSocialSharp/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
+    <BlueCard titre={"infographie"} icon={<SiAdobephotoshop/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
+    <BlueCard titre={"bureautique"} icon={<IoIosDocument/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
+    <BlueCard titre={"social propulcer"} icon={<IoShareSocialSharp/>} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam exercitationem enim rem omnis sequi, quibusdam ducimus sunt quae quas"} />
     </div>
     <Parallax />
 
