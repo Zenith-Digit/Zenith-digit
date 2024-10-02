@@ -1,7 +1,6 @@
 import CardDemo from "@/components/blocks/cards-demo-1";
 import Cadr from "@/components/cards/Cadr";
 import { Cards } from "@/components/cards/Cards";
-import Footer from "@/components/footer/Footer";
 import { Parallax } from "@/components/pralax/Paralax";
 import { Slider } from "@/components/slider/Slider";
 import Lamp from "@/components/ui/lamp";
@@ -45,8 +44,6 @@ export default function Home() {
 
     <Parallax />
 
-
-    <Footer />
     </>
   );
 }
