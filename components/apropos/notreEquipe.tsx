@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function notreEquipe() {
+export default function NotreEquipe() {
   return (
-    <div>notreEquipe</div>
+    <div>
+      <h1>notreEquipe</h1>
+      </div>
   )
 }
