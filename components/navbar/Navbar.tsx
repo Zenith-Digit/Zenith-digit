@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className='w-1/2 lg:flex justify-around mt-8 hidden'>
             <Link href={'./'} className='text-[#00fefb] text-xl'>ACCUEIL</Link>
             <Link href={'./apropos'} className='text-[#00fefb] text-xl'>À PROPOS</Link>
-            <Link href={'./'} className='text-[#00fefb] text-xl'>NOS SERVICES</Link>
+            <Link href={'./service'} className='text-[#00fefb] text-xl'>NOS SERVICES</Link>
             <Link href={'./'} className='text-[#00fefb] text-xl'>CONTACT</Link>
         </div>
         <div className='block lg:hidden'><SideNav /></div>

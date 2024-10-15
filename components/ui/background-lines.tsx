@@ -17,7 +17,7 @@ export const BackgroundLines = ({
   return (
     <div
       className={cn(
-        "h-[20rem] md:h- w-full bg-white dark:bg-black",
+        "h-[40rem] md:h- w-full bg-white dark:bg-black",
         className
       )}
     >
@@ -69,16 +69,22 @@ const SVG = ({
 
   const colors = [
     "#00fefb",
-    "#00fefb",
-    "#ffffff",
-    "#00fefb",
-    "#00fefb",
     "#ffffff",
     "#00fefb",
     "#ffffff",
     "#00fefb",
     "#ffffff",
     "#00fefb",
+    "#ffffff",
+    "#00fefb",
+    "#ffffff",
+    "#00fefb",
+    "#ffffff",
+    "#00fefb",
+    "#ffffff",
+    "#00fefb",
+    "#00fefb",
+    "#ffffff",
     "#00fefb",
     "#ffffff",
     "#00fefb",
