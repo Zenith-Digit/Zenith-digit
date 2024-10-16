@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Switch } from '../ui/switch'
 import { Sheet } from '../ui/sheet'
 import { SideNav } from '../sideNav/SideNav'
+import Mode from '../mode/Mode'
 
 
 
@@ -20,6 +21,7 @@ const Navbar = () => {
             <Link href={'./service'} className='text-[#00fefb] text-xl'>NOS SERVICES</Link>
             <Link href={'./'} className='text-[#00fefb] text-xl'>CONTACT</Link>
         </div>
+        <Mode/>
         <div className='block lg:hidden'><SideNav /></div>
     </nav>
   )
