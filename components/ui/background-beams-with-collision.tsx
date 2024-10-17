@@ -70,7 +70,7 @@ export const BackgroundBeamsWithCollision = ({
     <div
       ref={parentRef}
       className={cn(
-        "h-[44rem] bg-black relative  w-full text-center overflow-hidden ",
+        "lg:h-[44rem] bg-black relative  w-full text-center overflow-hidden ",
         // h-screen if you want bigger
         className
       )}
@@ -88,7 +88,6 @@ export const BackgroundBeamsWithCollision = ({
       <div
         ref={containerRef}
         className="absolute bottom-0 bg-[#00fefb] w-full inset-x-0 pointer-events-none"
-       
       ></div>
     </div>
   );
@@ -230,7 +229,7 @@ const Explosion = ({ ...props }: React.HTMLProps<HTMLDivElement>) => {
   }));
 
   return (
-    <div {...props} className={cn("absolute z-50 h-2 w-2", props.className)}>
+    <div {...props} className={cn("absolute z-50 h-8  w-2", props.className)}>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
