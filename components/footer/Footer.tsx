@@ -14,15 +14,15 @@ interface FooterProps {
 
 const Footer = ({ isDarkMode }: FooterProps) => {
   return (
-    <footer className="border-t-4 border-[#00fefb] flex justify-around">
-      <div>
+    <footer className="border-t-4 border-[#00fefb] text-center md:flex justify-around">
+      <div className="m-4 md-m-0w-4/6 md:w-1/3">
         <Image
           src={isDarkMode ? darkLogo : lightLogo}  // Changer dynamiquement le logo
           alt="logo"
-          className="w-24 lg:w-44"
+          className="w-24 lg:w-44 mx-auto"
         />
       </div>
-      <div className="flex-col justify-between">
+      <div className="flex-col text-start  m-4 md:m-0 w-4/6 md:w-1/3 mx-auto">
         <ul>
         
           <li className="m-2"><Link href={'./'} className='text-[#00fefb] text-xl'>ACCUEIL</Link></li>
@@ -34,7 +34,7 @@ const Footer = ({ isDarkMode }: FooterProps) => {
         
         
       </div>
-      <div className="flex-col justify-between gap-4 m-2">
+      <div className="flex justify-between m-2 w-4/6 mx-auto md:w-1/3">
         <Link href={"Facebook.com"}  className="text-4xl text-[#00fefb]"><FaFacebook className="m-2"/></Link>
         <Link href={"linkedin.com"}  className="text-4xl text-[#00fefb]"><FaLinkedin className="m-2"/></Link>
         <Link href={"instagram.com"}  className="text-4xl text-[#00fefb]"><FaInstagram className="m-2"/></Link>
