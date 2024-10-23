@@ -31,7 +31,7 @@ const Navbar = () => {
         <Link href={'./'} className='text-[#00fefb] text-xl'>ACCUEIL</Link>
         <Link href={'./apropos'} className='text-[#00fefb] text-xl'>À PROPOS</Link>
         <Link href={'./service'} className='text-[#00fefb] text-xl'>NOS SERVICES</Link>
-        <Link href={'./'} className='text-[#00fefb] text-xl'>CONTACT</Link>
+        <Link href={'./contact'} className='text-[#00fefb] text-xl'>CONTACT</Link>
       </div>
       <Mode onToggle={handleToggleMode} /> {/* Passez la fonction de gestion */}
       <div className='block lg:hidden'><SideNav /></div>
