@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
-import { Slider } from '@/components/slider/Slider';
 import GardePage from '@/components/pageGarde/GardePage';
+import { BlueCard } from '@/components/cards/BlueCard';
 
 export default function CardHoverEffectDemo() {
   return (
