@@ -35,27 +35,27 @@ export function SideNav() {
         <div className="my-4 border-t border-[#00fefb] py-2">
 
         <SheetClose asChild>
-            <Link href={'/'} className='text-[#00fefb] text-xl my-14'>ACCUEIL</Link>
+            <Link href={'/'} className='text-[#00fefb] text-xl my-14'>Accueil</Link>
         </SheetClose>
         </div>
         <div className="my-4 border-t border-[#00fefb] py-2">
 
         <SheetClose asChild>
-            <Link href={'/apropos'} className='text-[#00fefb] text-xl'>À PROPOS</Link>
+            <Link href={'/apropos'} className='text-[#00fefb] text-xl'>À propos</Link>
         </SheetClose>
         </div>
       
         <div className="my-4 border-t border-[#00fefb] py-2">
 
         <SheetClose asChild>
-            <Link href={'/'} className='text-[#00fefb] text-xl'>Accueil</Link>
+        <Link href={'./service'} className='text-[#00fefb] text-xl'>Nos services</Link>
         </SheetClose>
         </div>
         
         <div className="my-4 border-t border-[#00fefb] py-2">
 
         <SheetClose asChild>
-            <Link href={'/'} className='text-[#00fefb] text-xl'>Accueil</Link>
+        <Link href={'./contact'} className='text-[#00fefb] text-xl'>Contact</Link>
         </SheetClose>
         </div>
         </div>

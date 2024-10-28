@@ -5,6 +5,7 @@ import meeting from  "@/images/meeting.jpg"
 import team from  "@/images/2099846.jpg"
 import meet from  "@/images/2227535.jpg"
 import ting from  "@/images/2810977.jpg"
+import React, { useState , useEffect } from "react";
 
 const content = [
   {
@@ -73,14 +74,25 @@ const content = [
   },
 ];
 export default function QuiSommesNous() {
+  const [className, setClassName] = useState("text-white"); // Valeur par défaut
+
+  useEffect(() => {
+    const bodyClassList = document.body.classList;
+
+    // Vérifie la classe et met à jour className
+    if (bodyClassList.contains("bg-black")) {
+      setClassName("text-white");
+    } else {
+      setClassName("text-black");
+    }
+  }, []); // Effect à exécuter lors du premier rendu
+
   return (
     <div className="p-10">
+      <h1 className={`scroll-m-20 text-4xl text-center mt-10 mb-10 font-extrabold tracking-tight lg:text-5xl ${className}`}>
+        QUI SOMMES NOUS
+      </h1>
 
-        
-        <h1 className="scroll-m-20 text-4xl text-white text-center mt-10 mb-10 font-extrabold tracking-tight lg:text-5xl">
-      QUI SOMMES NOUS
-    </h1>
-    
       <StickyScroll content={content} />
     </div>
   );
