@@ -2,9 +2,9 @@ import React from "react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import logo from '@/components/navbar/logo.png'
 import Image from "next/image";
-export function VisionSection() {
+export function  VisionSection() {
   return (
-    <BackgroundBeamsWithCollision className="border-b-4 border-[#00fefb]">
+    <BackgroundBeamsWithCollision className="border-b-4 border-[#00fefb] ">
         <div className="lg:flex max-w-5xl mx-auto px-8">
         <div className="lg:w-1/2">
       <h2 className="text-[#00fefb] text-4xl font-bold m-8">Notre vision</h2>

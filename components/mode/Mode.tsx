@@ -38,7 +38,7 @@ export default function Mode({ onToggle }: ModeProps) {
 
   return (
     <Switch
-      className="m-10 border px-2 bg-black"
+      className="m-10 px-2 bg-black"
       defaultSelected={isDarkMode}
       size="lg"
       color="secondary"
