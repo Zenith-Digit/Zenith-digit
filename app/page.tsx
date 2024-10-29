@@ -1,9 +1,6 @@
-import CardDemo from "@/components/blocks/cards-demo-1";
-import Cadr from "@/components/cards/Cadr";
 import { BlueCard } from "@/components/cards/BlueCard";
 import { Parallax } from "@/components/pralax/Paralax";
 import { Slider } from "@/components/slider/Slider";
-import Lamp from "@/components/ui/lamp";
 import { VisionSection } from "@/components/ourvision/VisionSection";
 import QuiSommesNous from "@/components/apropos/QuiSommesNous";
 
@@ -19,7 +16,9 @@ export default function Home() {
     <BlueCard/>
     </div>
     <VisionSection />
+    <div className="border-b-4 border-[#00fefb] pb-20">
     <QuiSommesNous />
+    </div>
     <Parallax />
     </>
   );

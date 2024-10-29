@@ -4,8 +4,6 @@ import React, { useState } from 'react';
 import DarkLogo from './logodark.png';
 import LightLogo from './logo.png'; // Assurez-vous d'importer le logo clair
 import Link from 'next/link';
-import { Switch } from '../ui/switch';
-import { Sheet } from '../ui/sheet';
 import { SideNav } from '../sideNav/SideNav';
 import Mode from '../mode/Mode';
 
