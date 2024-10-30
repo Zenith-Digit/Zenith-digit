@@ -5,12 +5,39 @@ import { Parallax } from "@/components/pralax/Paralax";
 import { Slider } from "@/components/slider/Slider";
 import Lamp from "@/components/ui/lamp";
 import { VisionSection } from "@/components/ourvision/VisionSection";
-import QuiSommesNous from "@/components/apropos/QuiSommesNous";
 import Realiser from "@/components/realisation/Realisation";
 import { Partenaire } from "@/components/partenaire/Partenaire";
-
+import LogoCarousel from "@/components/logoSlider/LogoSlider";
+import logo from '@/components/navbar/logodark.png'
 
 export default function Home() {
+  const logos = [
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+  ]
   return (
     <>
      <Slider />
@@ -22,7 +49,7 @@ export default function Home() {
     </div>
     <VisionSection />
     <Realiser />
-    <Partenaire />
+    <LogoCarousel logos={logos}/>
     </>
   );
 }
