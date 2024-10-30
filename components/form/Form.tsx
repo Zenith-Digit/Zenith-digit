@@ -41,9 +41,9 @@ export default function Form() {
 
   return (
     <>
-      <div className="bg-[#00fefb] rounded-lg mb-20">
-        <div className="py-8 lg:py-16 px-4 md:px-10 lg:px-0 mx-auto max-w-screen-md">
-          <h2 className="mb-10 text-4xl md:text-6xl tracking-tight font-extrabold text-center text-black">
+      <div className="bg-[#00fefb] rounded-lg w-5/6 md:w-2/3 lg:px-20 md:max-w-screen-md mx-auto mb-20">
+        <div className="py-4 px-4 md:px-10 lg:px-0 mx-auto max-w-screen-sm">
+          <h2 className="mb-10 text-2xl md:text-5xl tracking-tight font-extrabold text-center text-black">
             Contactez-nous
           </h2>
           {submitted && (
@@ -51,7 +51,7 @@ export default function Form() {
           )}
           <form onSubmit={handleSubmit} className="space-y-8">
             <div>
-              <label htmlFor="subject" className="block mb-2 text-2xl font-extrabold text-black">
+              <label htmlFor="subject" className="block mb-2 md:text-2xl font-extrabold text-black">
                 Nom & Prénom
               </label>
               <input
@@ -65,7 +65,7 @@ export default function Form() {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block mb-2 text-2xl font-extrabold text-black">
+              <label htmlFor="email" className="block mb-2 md:text-2xl font-extrabold text-black">
                 Email
               </label>
               <input
@@ -79,7 +79,7 @@ export default function Form() {
               />
             </div>
             <div className="sm:col-span-2">
-              <label htmlFor="message" className="block mb-2 text-2xl font-extrabold text-black">
+              <label htmlFor="message" className="block mb-2 md:text-2xl font-extrabold text-black">
                 Votre message
               </label>
               <textarea
@@ -95,9 +95,9 @@ export default function Form() {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="py-3 px-5 text-2xl bg-black font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                className="py-3 px-5 md:text-2xl bg-black font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
               >
-                Envoyer le message
+                Envoyer
               </button>
             </div>
           </form>
