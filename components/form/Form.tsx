@@ -42,7 +42,7 @@ export default function Form() {
   return (
     <>
       <div className="bg-[#00fefb] rounded-lg mb-20">
-        <div className="py-8 lg:py-16 px-4 md:px-0 mx-auto max-w-screen-md">
+        <div className="py-8 lg:py-16 px-4 md:px-10 lg:px-0 mx-auto max-w-screen-md">
           <h2 className="mb-10 text-4xl md:text-6xl tracking-tight font-extrabold text-center text-black">
             Contactez-nous
           </h2>
