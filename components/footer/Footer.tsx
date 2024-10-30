@@ -13,7 +13,7 @@ interface FooterProps {
 const Footer = ({ isDarkMode }: FooterProps) => {
   return (
     <footer className="border-t-4 border-[#00fefb] text-center">
-      <div className="mx-auto w-full max-w-screen-xl p-4 ">
+      <div className="mx-auto w-full  p-4 ">
         <div className="md:flex md:justify-between">
           {/* Logo */}
           <div className="md:mb-0">
@@ -69,7 +69,7 @@ const Footer = ({ isDarkMode }: FooterProps) => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm sm:text-lg sm:text-center">© 2024 <Link href="https://flowbite.com/" className="hover:underline">ZenithDigit™</Link>. All Rights Reserved.
           </span>
-          <div className="flex mt-4 w-1/3 mx-auto justify-between sm:mt-0 ">
+          <div className="flex mt-4 w-1/3 lg:w-1/5 mx-auto justify-between sm:mt-0 ">
             <Link href="https://www.facebook.com" className="sm:text-4xl hover:text-[#00fefb]" aria-label="Facebook">
               <FaFacebook />
             </Link>
