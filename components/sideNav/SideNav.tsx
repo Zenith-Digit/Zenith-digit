@@ -3,33 +3,29 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
   SheetFooter,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 import Image from "next/image";
 import Link from "next/link"
 import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
-import  logo  from '@/components/navbar/logodark.png';
+import lightLogo from "@/components/navbar/logo.png";
+import darkLogo from "@/components/navbar/logodark.png";
 
 
-export function SideNav() {
+
+export function SideNav({isDarkMode}:{isDarkMode:boolean}) {
   return (
     <Sheet>
       <SheetTrigger asChild>
       <IoMenu className="text-[#00fefb] m-5 border border-[#00fefb] rounded text-4xl"/>
       </SheetTrigger>
-      <SheetContent className="bg-black border-s border-[#00fefb] z-50">
+      <SheetContent className={`border-s border-[#00fefb] z-50 ${isDarkMode ? 'bg-white' : 'bg-black'}`}>
         <SheetHeader className="flex-row justify-between w-full">
             <div>
-            <Image src={logo} alt={"logo"} className="w-20"/>
+            <Image src={isDarkMode ? lightLogo : darkLogo} alt={"logo"} className="w-20"/>
             </div>
-          <SheetClose asChild>
-            <IoClose className="text-[#00fefb]  border border-[#00fefb] rounded text-4xl"/>
-          </SheetClose>
         </SheetHeader>
       <div className=' mt-8 '>
         <div className="my-4 border-t border-[#00fefb] py-2">

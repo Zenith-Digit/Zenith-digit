@@ -2,10 +2,39 @@ import { BlueCard } from "@/components/cards/BlueCard";
 import { Parallax } from "@/components/pralax/Paralax";
 import { Slider } from "@/components/slider/Slider";
 import { VisionSection } from "@/components/ourvision/VisionSection";
-import QuiSommesNous from "@/components/apropos/QuiSommesNous";
-
+import Realiser from "@/components/realisation/Realisation";
+import { Partenaire } from "@/components/partenaire/Partenaire";
+import LogoCarousel from "@/components/logoSlider/LogoSlider";
+import logo from '@/components/navbar/logodark.png'
 
 export default function Home() {
+  const logos = [
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+    logo,
+  ]
   return (
     <>
      <Slider />
@@ -16,10 +45,8 @@ export default function Home() {
     <BlueCard/>
     </div>
     <VisionSection />
-    <div className="border-b-4 border-[#00fefb] pb-20">
-    <QuiSommesNous />
-    </div>
-    <Parallax />
+    <Realiser />
+    <LogoCarousel logos={logos}/>
     </>
   );
 }

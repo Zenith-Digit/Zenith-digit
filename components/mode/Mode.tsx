@@ -2,7 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { Switch } from "@nextui-org/switch";
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import { FaMoon } from "react-icons/fa";
+import {  MdWbSunny} from "react-icons/md";
+
+
 
 interface ModeProps {
   onToggle: (isDarkMode: boolean) => void;
@@ -38,7 +41,7 @@ export default function Mode({ onToggle }: ModeProps) {
 
   return (
     <Switch
-      className="m-10 border px-2 mt-6 me-4 bg-[#00fefb]"
+      className=""
       defaultSelected={isDarkMode}
       size="lg"
       color="secondary"
@@ -48,9 +51,9 @@ export default function Mode({ onToggle }: ModeProps) {
       }}
       thumbIcon={({ isSelected }) =>
         isSelected ? (
-          <MoonIcon className="text-gray-500" />
+          <FaMoon />
         ) : (
-          <SunIcon className="text-gray-500" />
+          <MdWbSunny className="text-black" />
         )
       }
     />

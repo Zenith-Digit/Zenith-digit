@@ -32,7 +32,7 @@ const Navbar = () => {
         <Link href={'./contact'} className='text-[#00fefb] text-xl hover:underline'>Contact</Link>
       </div>
       <Mode onToggle={handleToggleMode} /> {/* Passez la fonction de gestion */}
-      <div className='block lg:hidden'><SideNav /></div>
+      <div className='block lg:hidden'><SideNav isDarkMode={isDarkMode}/></div>
     </nav>
   );
 }
