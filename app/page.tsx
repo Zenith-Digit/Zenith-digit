@@ -1,9 +1,6 @@
-import CardDemo from "@/components/blocks/cards-demo-1";
-import Cadr from "@/components/cards/Cadr";
 import { BlueCard } from "@/components/cards/BlueCard";
 import { Parallax } from "@/components/pralax/Paralax";
 import { Slider } from "@/components/slider/Slider";
-import Lamp from "@/components/ui/lamp";
 import { VisionSection } from "@/components/ourvision/VisionSection";
 import Realiser from "@/components/realisation/Realisation";
 import { Partenaire } from "@/components/partenaire/Partenaire";

@@ -13,21 +13,21 @@ interface FooterProps {
 const Footer = ({ isDarkMode }: FooterProps) => {
   return (
     <footer className="border-t-4 border-[#00fefb] text-center">
-      <div className="mx-auto w-full max-w-screen-xl p-4 ">
+      <div className="mx-auto w-full  p-4 ">
         <div className="md:flex md:justify-between">
           {/* Logo */}
           <div className="md:mb-0">
             <Image
               src={isDarkMode ? darkLogo : lightLogo}  // Changement dynamique du logo
               alt="logo"
-              className="w-24 mx-auto"
+              className="w-24 md:mt-10 mx-auto"
             />
           </div>
 
           {/* Navigation Links */}
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 text-start md:justify-between md:w-2/3">
             <div>
-              <h2 className="text-xl text-[#00fefb] mb-4 md:text-4xl">Resources</h2>
+              <h2 className="text-xl text-[#00fefb] mb-4 md:text-3xl">Resources</h2>
               <ul className=" sm:text-xl">
                 <li className="mb-4">
                   <Link href="https://flowbite.com/" className="hover:underline">Flowbite</Link>
@@ -38,7 +38,7 @@ const Footer = ({ isDarkMode }: FooterProps) => {
               </ul>
             </div>
             <div>
-              <h2 className="text-xl text-[#00fefb] mb-4 md:text-4xl">Follow us</h2>
+              <h2 className="text-xl text-[#00fefb] mb-4 md:text-3xl">Follow us</h2>
               <ul className=" sm:text-xl">
                 <li className="mb-4">
                   <Link href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</Link>
@@ -49,7 +49,7 @@ const Footer = ({ isDarkMode }: FooterProps) => {
               </ul>
             </div>
             <div>
-              <h1 className="text-xl text-[#00fefb] mb-4 md:text-4xl">Pages</h1>
+              <h2 className="text-xl text-[#00fefb] mb-4 md:text-3xl">Pages</h2>
               <ul className=" sm:text-xl">
                 <li className="mb-2"><Link href={'./'} className="hover:underline">Accueil</Link></li>
                 <li className="mb-2"><Link href={'./apropos'} className='hover: hover:underline'>À propos</Link></li>
@@ -69,7 +69,7 @@ const Footer = ({ isDarkMode }: FooterProps) => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm sm:text-lg sm:text-center">© 2024 <Link href="https://flowbite.com/" className="hover:underline">ZenithDigit™</Link>. All Rights Reserved.
           </span>
-          <div className="flex mt-4 w-1/3 mx-auto justify-between sm:mt-0 ">
+          <div className="flex mt-4 w-1/3 lg:w-1/5 mx-auto justify-between sm:mt-0 ">
             <Link href="https://www.facebook.com" className="sm:text-4xl hover:text-[#00fefb]" aria-label="Facebook">
               <FaFacebook />
             </Link>
