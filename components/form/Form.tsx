@@ -41,7 +41,7 @@ export default function Form() {
 
   return (
     <>
-      <div className="bg-[#00fefb] rounded-lg w-5/6 md:w-2/3 lg:px-20 md:max-w-screen-md mx-auto mb-20">
+      <div className="bg-[#00fefb] rounded-lg w-5/6 md:w-2/3 lg:px-10 md:max-w-screen-md mx-auto mb-20">
         <div className="py-4 px-4 md:px-10 lg:px-0 mx-auto max-w-screen-sm">
           <h2 className="mb-10 text-2xl md:text-5xl tracking-tight font-extrabold text-center text-black">
             Contactez-nous
@@ -73,7 +73,7 @@ export default function Form() {
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="shadow-sm bg-gray-50 border border-gray-300 md:h-16 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                className="shadow-sm border border-gray-300 md:h-16 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="name@exemple.com"
                 required
               />
@@ -87,7 +87,7 @@ export default function Form() {
                 rows={6}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="block p-2.5 w-full text-sm text-gray-900 md:h-80 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                className="block p-2.5 w-full text-sm text-gray-900 md:h-60 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Laissez un commentaire..."
                 required
               ></textarea>
