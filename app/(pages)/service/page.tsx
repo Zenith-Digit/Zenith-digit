@@ -7,6 +7,10 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { SiMicrosoftbing } from "react-icons/si";
 import { FaMeta } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
+import wireframe from '@/images/wir.jpg'
+import design from '@/images/fig.jpg'
+import Image from 'next/image'
+
 
 
 export default function CardHoverEffectDemo() {
@@ -48,8 +52,8 @@ export default function CardHoverEffectDemo() {
         <h2 className="text-[#00fefb] text-4xl font-bold m-8 text-center">Design UX/UI
         </h2>
         <p className='w-5/6 mx-auto py-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias accusantium animi ullam, expedita qui neque nisi perspiciatis reiciendis voluptas repudiandae iste quis non sit facere culpa corporis doloremque facilis optio!</p>
-        <div className='flex justify-around md:justify-between w-full md:w-5/6 mx-auto my-10'>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="figma" className='w-16'>
+        <div className=' md:flex justify-around md:justify-between w-full md:w-5/6 mx-auto my-10'>
+          {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="figma" className='w-16'>
             <path fill="#0ACF83" d="M8 24c2.208 0 4-1.792 4-4v-4H8c-2.208 0-4 1.792-4 4s1.792 4 4 4z"></path>
             <path fill="#A259FF" d="M4 12c0-2.208 1.792-4 4-4h4v8H8c-2.208 0-4-1.792-4-4z"></path>
             <path fill="#F24E1E" d="M4 4c0-2.208 1.792-4 4-4h4v8H8C5.792 8 4 6.208 4 4z"></path>
@@ -71,9 +75,10 @@ export default function CardHoverEffectDemo() {
 	c-87.5,41.7-179.2,60.4-266.7,60.4C1492.7,1733.3,1331.2,1593.8,1331.3,1310.4L1331.3,1310.4z M1803.1,1043.8
 	c-14.6-6.3-35.4-10.4-60.4-10.4c-131.3,0-222.9,101-222.9,268.8c0,191.7,93.8,268.8,211.5,268.8c25,0,52.1-3.1,71.9-11.5V1043.8z"></path>
           </svg>
+          <MdOutlineDesignServices className='text-6xl' /> */}
 
-
-          <MdOutlineDesignServices className='text-6xl' />
+          <Image src={wireframe} alt='' className='w-80 mx-auto my-6'/>
+          <Image src={design} alt='' className='w-80 mx-auto my-6'/>
         </div>
         <div>
 

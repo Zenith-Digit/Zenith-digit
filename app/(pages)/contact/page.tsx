@@ -38,7 +38,7 @@ export default function BackgroundBeamsDemo() {
     <h2 className="text-[#00fefb] text-4xl font-bold m-8 text-center">Suivez nous</h2>
     <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 w-5/6 mx-auto my-10">
     
-      <iframe src="https://www.facebook.com/abdourahamanesaley.haougui"  className="w-72 h-[400px] "></iframe>
+      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcodeloccol%2Fposts%2Fpfbid031gYksstWFPfFeBo3mj7Y89okaEwU6WdgNPXrk4tw6rXhdE8CZcjXj2Q9GpPR6vWUl&show_text=true&width=500"  className="w-72 h-[400px] "></iframe>
   <iframe src="https://www.codeloccol.org/"  className="w-72 h-[400px] "></iframe>
   <iframe src="https://www.codeloccol.org/"  className="w-72 h-[400px] "></iframe>
   <iframe src="https://www.codeloccol.org/"  className="w-72 h-[400px] "></iframe>
