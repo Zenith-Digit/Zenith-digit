@@ -1,19 +1,24 @@
 .guard-page {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 500px;
     background-position: center;
     background-image: url('../../images/fibre.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
 .content {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .guard-page{
+        height: 350px;
+    }
 }

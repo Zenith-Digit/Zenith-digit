@@ -12,7 +12,7 @@ interface FooterProps {
 
 const Footer = ({ isDarkMode }: FooterProps) => {
   return (
-    <footer className="border-t-4 border-[#00fefb] text-center">
+    <footer className="border-t-4 border-[#00fefb] text-center bottom-0">
       <div className="mx-auto w-full  p-4 ">
         <div className="md:flex md:justify-between">
           {/* Logo */}
