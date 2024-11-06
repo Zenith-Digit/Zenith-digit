@@ -1,13 +1,40 @@
 'use client'
+import ansi from '@/images/ansi.png';
+import adu from '@/images/adu.png';
+import cipmen from '@/images/cipmen.png';
+import codeloccol from '@/images/Codeloccol.png'
 import Image from 'next/image';
 import React from 'react';
 import './logoslider.css';
 
-interface InfiniteLogoCarouselProps {
-  logos: any[]; // Liste des URLs d'images de logos
-}
 
-const LogoCarousel: React.FC<InfiniteLogoCarouselProps> = ({ logos }) => {
+
+const LogoCarousel = () => {
+
+  const logos = [
+    ansi,
+    adu,
+    cipmen,
+    codeloccol,
+    ansi,
+    adu,
+    cipmen,
+    codeloccol,
+    ansi,
+    adu,
+    cipmen,
+    codeloccol,
+    ansi,
+    adu,
+    cipmen,
+    codeloccol,
+    ansi,
+    adu,
+    cipmen,
+    codeloccol,
+  ]
+
+
   return (
     <div className='border-b-4 border-[#00fefb] py-8'>
     <h2 className="text-[#00fefb] text-4xl font-bold m-8 text-center">Nos partenaire</h2>
