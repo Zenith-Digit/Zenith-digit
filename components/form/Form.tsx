@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
+import { title } from 'process';
+import { toast } from 'sonner';
 
 export default function Form() {
   const [nom, setNom] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [btn, setBtn] = useState(false)
 
   // Fonction pour gérer la soumission du formulaire
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-
+    setBtn(true)
     // Validation simple
     if (!nom || !email || !message) {
       alert("Tous les champs sont obligatoires.");
@@ -29,13 +32,34 @@ export default function Form() {
         setNom('');
         setEmail('');
         setMessage('');
-        alert("Message envoyé avec succès !");
+        setBtn(false)
+        toast('Message envoyé avec success !',{
+          position: 'top-right',
+          style:{
+            backgroundColor: "#00fefb",
+            color: 'white'
+          }
+        })
       } else {
-        alert("Erreur lors de l'envoi du message.");
+        setBtn(false)
+        toast('Erreur lors de l\'envoi du message.',{
+          position: 'top-right',
+          style:{
+            backgroundColor: "red",
+            color: 'white'
+          }
+        })
       }
     } catch (error) {
       console.error("Erreur :", error);
-      alert("Erreur de connexion à l'API.");
+      setBtn(false)
+      toast('Erreur de connexion au serveur',{
+        position: 'top-right',
+        style:{
+          backgroundColor: "red",
+          color: 'white'
+        }
+      })
     }
   };
 
@@ -46,9 +70,6 @@ export default function Form() {
           <h2 className="mb-10 text-2xl md:text-5xl tracking-tight font-extrabold text-center text-black">
             Contactez-nous
           </h2>
-          {submitted && (
-            <p className="text-green-500 text-center mb-4">Merci pour votre message !</p>
-          )}
           <form onSubmit={handleSubmit} className="space-y-8">
             <div>
               <label htmlFor="subject" className="block mb-2 md:text-2xl font-extrabold text-black">
@@ -94,10 +115,11 @@ export default function Form() {
             </div>
             <div className="flex justify-center">
               <button
+              disabled= {btn}
                 type="submit"
-                className="py-3 px-5 md:text-2xl bg-black font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                className={`py-3 px-5 md:text-2xl ${btn ? "bg-neutral-500" : "bg-black"} font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800`}
               >
-                Envoyer
+                {btn? "...." : "Envoyer"}
               </button>
             </div>
           </form>
