@@ -1,24 +1,20 @@
 "use client"
 import React from "react";
-import { BackgroundLines } from "@/components/ui/background-lines";
 import QuiSommesNous from "@/components/apropos/QuiSommesNous";
 import NotreEquipe from "@/components/apropos/notreEquipe";
+import GardePage from "@/components/pageGarde/GardePage";
+import { VisionSection } from "@/components/ourvision/VisionSection";
 
-export default function BackgroundLinesDemo() {
+export default function page() {
   return (
     <>
-    <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
-      <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
-        Sanjana Airlines, <br /> Sajana Textiles.
-      </h2>
-      <p className="max-w-xl mx-auto text-sm md:text-lg text-[#333333] text-center">
-        Get the best advices from our experts, including expert artists,
-        painters, marathon enthusiasts and RDX, totally free.
-      </p>
-
-    </BackgroundLines>
-     <QuiSommesNous/>
-     <NotreEquipe/>
+    <GardePage title={"A propos"} />
+     <div className="border-b-4 border-[#00fefb]">
+     <h2 className="text-[#00fefb] text-4xl font-bold m-8 text-center">Bienvenue chez Zenith Digit
+     </h2>
+     <p className='w-5/6 mx-auto py-4'>Chez Zenith Digit, nous accompagnons les entreprises dans leur transformation numérique pour les aider à atteindre leur plein potentiel. Passionnée par la technologie et le marketing, notre équipe collabore étroitement avec chaque client pour concevoir des stratégies digitales personnalisées et maximiser leur visibilité.</p>
+     </div>
+     <VisionSection />
      </>
   );
 }
