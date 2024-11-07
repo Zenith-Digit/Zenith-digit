@@ -10,8 +10,8 @@ interface ContactCardProps {
 
 const ContactCard: React.FC<ContactCardProps> = ({ initials, name, position, email, phone }) => {
     return (
-        <div className="flex items-center sm:flex-col md:flex-row mx-auto space-x-4 bg-gray-900 p-4 rounded-md shadow-md max-w-md">
-            <div className="flex items-center justify-center w-16 h-16 bg-white rounded-full">
+        <div className="flex items-center flex-col md:flex-row mx-auto space-x-4 bg-gray-900 p-4 rounded-md shadow-md max-w-md">
+            <div className="flex items-center justify-center w-16 h-16 bg-white rounded-full m-4 md:m-0">
                 {/* Avatar ou  tu peux mettre les images comme tu as dit qu'ils seront importés */}
                 <span className="text-[#00fefb] font-bold text-lg">{initials}</span>
             </div>
