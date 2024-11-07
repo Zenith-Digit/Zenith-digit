@@ -1,19 +1,24 @@
 import React from 'react';
+import Image, { StaticImageData } from 'next/image';
 
 interface ContactCardProps {
-    initials: string;
+    avatar?: StaticImageData; // URL de l'image d'avatar
+    initials?: string; // Garder cette option si jamais l'image n'est pas disponible
     name: string;
     position: string;
     email: string;
     phone: string;
 }
 
-const ContactCard: React.FC<ContactCardProps> = ({ initials, name, position, email, phone }) => {
+const ContactCard: React.FC<ContactCardProps> = ({ avatar, initials, name, position, email, phone }) => {
     return (
         <div className="flex items-center flex-col md:flex-row mx-auto space-x-4 bg-gray-900 p-4 rounded-md shadow-md max-w-md">
-            <div className="flex items-center justify-center w-16 h-16 bg-white rounded-full m-4 md:m-0">
-                {/* Avatar ou  tu peux mettre les images comme tu as dit qu'ils seront importés */}
-                <span className="text-[#00fefb] font-bold text-lg">{initials}</span>
+            <div className="flex items-center justify-center w-16 h-16 bg-white rounded-full overflow-hidden m-4 md:m-0">
+                {avatar ? (
+                    <Image src={avatar} alt={`${name} avatar`} width={64} height={64} className="rounded-full" />
+                ) : (
+                    <span className="text-[#00fefb] font-bold text-lg">{initials}</span>
+                )}
             </div>
             {/* Contact Info */}
             <div className="flex flex-col">
