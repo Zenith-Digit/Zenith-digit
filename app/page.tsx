@@ -3,7 +3,6 @@ import { Slider } from "@/components/slider/Slider";
 import { VisionSection } from "@/components/ourvision/VisionSection";
 import Realiser from "@/components/realisation/Realisation";
 import LogoCarousel from "@/components/logoSlider/LogoSlider";
-import logo from '@/components/navbar/logodark.png'
 
 export default function Home() {
  

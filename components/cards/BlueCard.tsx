@@ -1,6 +1,5 @@
 "use client"
 import { HoverEffect } from "../ui/card-hover-effect";
-import { FaStripe, FaGoogle, FaFacebook, FaAmazon, FaMicrosoft } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 import { FaMobileScreenButton } from "react-icons/fa6";
 import { MdOutlineDesignServices } from "react-icons/md";
