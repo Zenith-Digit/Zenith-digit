@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react'
-import { FaCode } from "react-icons/fa";
 
 
 const Card = ({titre, icon , text}:{titre: string, icon: ReactNode, text: string}) => {

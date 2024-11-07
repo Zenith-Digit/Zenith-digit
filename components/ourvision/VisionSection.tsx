@@ -1,7 +1,5 @@
 import React from "react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import logo from '@/components/navbar/logodark.png'
-import Image from "next/image";
 import './vision.css'
 export function  VisionSection() {
   return (

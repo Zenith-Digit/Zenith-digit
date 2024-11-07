@@ -3,7 +3,6 @@ import React from 'react'
 import GardePage from '@/components/pageGarde/GardePage';
 import { BlueCard } from '@/components/cards/BlueCard';
 import WebDev from '@/components/webDev/WebDev';
-import { MdOutlineDesignServices } from "react-icons/md";
 import { SiMicrosoftbing } from "react-icons/si";
 import { FaMeta } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
