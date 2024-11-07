@@ -3,6 +3,7 @@ import React from "react";
 import Form from "@/components/form/Form";
 import GardePage from "@/components/pageGarde/GardePage";
 import ContactCard from "@/components/profilInfos/infos";
+import Logo from  "../../../images/kim.jpg"
 
 export default function BackgroundBeamsDemo() {
   return (
@@ -29,6 +30,7 @@ export default function BackgroundBeamsDemo() {
       />
       <ContactCard
         initials="AS"
+        avatar={Logo}
         name="Abdoul Salim Ali Maazou"
         position="Responsable Commercial"
         email="Abdoulsalim@gmail.com"
