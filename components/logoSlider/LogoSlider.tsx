@@ -3,6 +3,8 @@ import ansi from '@/images/ansi.png';
 import adu from '@/images/adu.png';
 import cipmen from '@/images/cipmen.png';
 import codeloccol from '@/images/Codeloccol.png'
+import kim from '@/images/logokim.png'
+import Es from '@/images/logoEs.png'
 import Image from 'next/image';
 import React from 'react';
 import './logoslider.css';
@@ -16,27 +18,43 @@ const LogoCarousel = () => {
     adu,
     cipmen,
     codeloccol,
+    kim,
+    Es,
     ansi,
     adu,
     cipmen,
     codeloccol,
+    kim,
+    Es,
     ansi,
     adu,
     cipmen,
     codeloccol,
+    kim,
+    Es,
     ansi,
     adu,
     cipmen,
     codeloccol,
+    kim,
+    Es,
     ansi,
     adu,
     cipmen,
     codeloccol,
+    kim,
+    Es,
+    ansi,
+    adu,
+    cipmen,
+    codeloccol,
+    kim,
+    Es,
   ]
 
 
   return (
-    <div className='border-b-4 border-[#00fefb] py-8'>
+    <div className=' py-8'>
     <h2 className="text-[#00fefb] text-4xl font-bold m-8 text-center">Nos partenaire</h2>
     <div className="overflow-hidden whitespace-nowrap">
       <div className="animate-scroll flex items-center gap-8">
