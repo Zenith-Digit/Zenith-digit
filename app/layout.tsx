@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { Toaster } from "sonner";
 
+
 const geistSans = localFont({
   src: "./fonts/Montserrat-VariableFont_wght.ttf",
   variable: "--font-geist-sans",
