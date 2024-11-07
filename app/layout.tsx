@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { Toaster } from "sonner";
 
 const geistSans = localFont({
   src: "./fonts/Montserrat-VariableFont_wght.ttf",
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={`antialiased ${isDarkMode ? "bg-black" : "bg-white"}`}>
         <Navbar />
         <div className="pt-24">{children}</div> {/* children est typé correctement */}
+        <Toaster />
         <Footer isDarkMode={isDarkMode} />
       </body>
     </html>
