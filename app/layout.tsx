@@ -1,6 +1,6 @@
 "use client"
 
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import React, { useState, useEffect } from "react";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
@@ -8,16 +8,16 @@ import Footer from "@/components/footer/Footer";
 import { Toaster } from "sonner";
 
 
-const geistSans = localFont({
-  src: "./fonts/Montserrat-VariableFont_wght.ttf",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/Montserrat-Italic-VariableFont_wght.ttf",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const geistSans = localFont({
+//   src: "./fonts/Montserrat-VariableFont_wght.ttf",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/Montserrat-Italic-VariableFont_wght.ttf",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 interface RootLayoutProps {
   children: React.ReactNode; // Spécifier le type de `children`
 }
