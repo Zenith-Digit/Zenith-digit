@@ -5,6 +5,7 @@ import { ImagesSlider } from "../ui/images-slider";
 import { FlipWords } from "../ui/flip-words";
 import Image from "next/image";
 import logo from '@/components/loading/logo.png'
+import Link from "next/link";
 
 
 export function Slider() {
@@ -34,10 +35,12 @@ export function Slider() {
             <p className="text-[#00fefb] m-2">Zenith Digit</p>
           <p>specialisé en <FlipWords words={['Developpement web', 'Developpement Mobile','Web design']} /></p>
         </motion.p>
-        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+        <Link href={"/contact"} >
+        <button  className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
           <span>Contactez nous →</span>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[#00fefb] to-transparent" />
         </button>
+        </Link>
       </motion.div>
     </ImagesSlider>
   );

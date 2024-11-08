@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { title } from 'process';
 import { toast } from 'sonner';
 
 export default function Form() {
   const [nom, setNom] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [submitted, setSubmitted] = useState(false);
   const [btn, setBtn] = useState(false)
 
   // Fonction pour gérer la soumission du formulaire
@@ -28,7 +26,6 @@ export default function Form() {
       });
 
       if (response.ok) {
-        setSubmitted(true);
         setNom('');
         setEmail('');
         setMessage('');
