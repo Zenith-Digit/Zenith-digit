@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 
 export const ImagesSlider = ({
   images,
@@ -24,6 +24,30 @@ export const ImagesSlider = ({
   const [, setLoading] = useState(false);
   const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
+  // Fonction pour charger les images
+  const loadImages = useCallback(() => {
+    setLoading(true);
+    const loadPromises = images.map((image) => {
+      return new Promise<string>((resolve, reject) => {
+        const img = new Image();
+        img.src = image;
+        img.onload = () => resolve(image);
+        img.onerror = reject;
+      });
+    });
+
+    Promise.all(loadPromises)
+      .then((loaded) => {
+        setLoadedImages(loaded);
+        setLoading(false);
+      })
+      .catch((error) => console.error("Failed to load images", error));
+  }, [images]);
+
+  useEffect(() => {
+    loadImages();
+  }, [loadImages]);
+
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex + 1 === images.length ? 0 : prevIndex + 1
@@ -37,28 +61,6 @@ export const ImagesSlider = ({
   };
 
   useEffect(() => {
-    loadImages();
-  }, []);
-
-  const loadImages = () => {
-    setLoading(true);
-    const loadPromises = images.map((image) => {
-      return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.src = image;
-        img.onload = () => resolve(image);
-        img.onerror = reject;
-      });
-    });
-
-    Promise.all(loadPromises)
-      .then((loadedImages) => {
-        setLoadedImages(loadedImages as string[]);
-        setLoading(false);
-      })
-      .catch((error) => console.error("Failed to load images", error));
-  };
-  useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "ArrowRight") {
         handleNext();
@@ -70,7 +72,7 @@ export const ImagesSlider = ({
     window.addEventListener("keydown", handleKeyDown);
 
     // autoplay
-    let interval: ReturnType<typeof setInterval>;
+    let interval: NodeJS.Timeout;
     if (autoplay) {
       interval = setInterval(() => {
         handleNext();
@@ -81,7 +83,7 @@ export const ImagesSlider = ({
       window.removeEventListener("keydown", handleKeyDown);
       clearInterval(interval);
     };
-  }, []);
+  }, [autoplay, handleNext]);
 
   const slideVariants = {
     initial: {

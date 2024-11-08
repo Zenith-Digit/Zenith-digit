@@ -164,7 +164,7 @@ export const Card = ({
 }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose } = useContext(CarouselContext);
+  // const { onCardClose } = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -191,7 +191,7 @@ export const Card = ({
 
   const handleClose = () => {
     setOpen(false);
-    onCardClose(index);
+    // onCardClose(index);
   };
 
   return (
