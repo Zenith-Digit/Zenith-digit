@@ -19,7 +19,7 @@ export const projects = [
   {
     title: "Développement web",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Zenith Digit offre des solutions de développement web sur mesure pour aider les entreprises à se connecter au monde numérique. De la création de sites web performants à l'intégration de technologies modernes, nous mettons à votre disposition notre expertise pour vous assurer une présence en ligne efficace et percutante.",
     link: "https://stripe.com",
     icon: <TbWorldWww />, // Icône associée à Stripe
   },
