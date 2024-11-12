@@ -203,6 +203,7 @@ const CollisionMechanism = React.forwardRef<
       <AnimatePresence>
         {collision.detected && collision.coordinates && (
           <Explosion
+             ref = {ref}
             key={`${collision.coordinates.x}-${collision.coordinates.y}`}
             className=""
             style={{
