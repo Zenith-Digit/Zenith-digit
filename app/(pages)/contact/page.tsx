@@ -10,7 +10,8 @@ export default function BackgroundBeamsDemo() {
     <div>
       <GardePage title={"Contact"} />
       <h1 className='text-[#00fefb] text-4xl font-bold m-8 text-center'>Nos Contacts</h1>
-      <p className='w-5/6 mx-auto py-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias accusantium animi ullam, expedita qui neque nisi perspiciatis reiciendis voluptas repudiandae iste quis non sit facere culpa corporis doloremque facilis optio!</p>
+      <p className='w-5/6 mx-auto py-4'>Nous sommes disponibles pour répondre à toutes vos interrogations et vous soutenir dans vos projets. Contactez-nous sans hésitation, notre équipe est prête à vous offrir une assistance professionnelle et rapide.
+                                        Vous pouvez nous atteindre par téléphone, par e-mail ou en utilisant le formulaire de contact ci-dessous. Nous nous engageons à vous répondre rapidement.</p>
     <div className="max-w-screen-lg mt-10 mx-auto">
       <Form/>
       <div className="grid gap-6 mb-10 sm:grid-cols-1 px-20 md:px-0 md:grid-cols-2 lg:grid-cols-3">
