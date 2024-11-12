@@ -42,7 +42,7 @@ export default function ScrollToTop() {
     isVisible && (
       <Button
         onClick={scrollTo}
-        className="fixed bottom-5 right-5 bg-primary hover:bg-primary-dark rounded-full p-3 shadow-[#00fefb]"
+        className="fixed bottom-5 right-5 bg-primary hover:bg-primary-dark rounded-full p-3 shadow-[#00fefb] -me-5 w-10 md:me-0 md:w-11"
       >
         {scrollDirection === "top" ? (
           <ChevronUp className="h-5 w-5" />
