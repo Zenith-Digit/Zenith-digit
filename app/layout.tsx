@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { Toaster } from "sonner";
+import ScrollToTop from "@/components/defiller/ScrollToTop";
 
 
 // const geistSans = localFont({
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Navbar />
         <div className="pt-24">{children}</div> {/* children est typé correctement */}
         <Toaster />
+        <ScrollToTop />
         <Footer isDarkMode={isDarkMode} />
       </body>
     </html>
