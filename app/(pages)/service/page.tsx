@@ -62,7 +62,7 @@ export default function CardHoverEffectDemo() {
       <div className='border-b-4 border-[#00fefb] '>
         <h2 className="text-[#00fefb] text-4xl font-bold m-8 text-center">Reseau Sociaux
         </h2>
-        <p className='w-5/6 mx-auto py-8 text-center text-lg md:text-xl lg:text-2xl font-medium leading-relaxed tracking-wide'>Nous sommes actifs sur diverses plateformes afin de maintenir le lien avec vous. Abonnez-vous pour être au courant de nos dernières nouvelles, de nos projets en développement, et bien d'autres choses ! Restez à jour, engagez-vous avec nous et intégrez notre communauté.</p>
+        <p className='w-5/6 mx-auto py-8 text-center text-lg md:text-xl lg:text-2xl font-medium leading-relaxed tracking-wide'>Nous sommes actifs sur diverses plateformes afin de maintenir le lien avec vous. Abonnez-vous pour être au courant de nos dernières nouvelles, de nos projets en développement, et bien d&apos;autres choses ! Restez à jour, engagez-vous avec nous et intégrez notre communauté.</p>
         <div className='flex justify-around md:justify-between w-full md:w-5/6 mx-auto my-10'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="facebook" className='w-16'>
             <path fill="#1877f2" d="M1024,512C1024,229.23016,794.76978,0,512,0S0,229.23016,0,512c0,255.554,187.231,467.37012,432,505.77777V660H302V512H432V399.2C432,270.87982,508.43854,200,625.38922,200,681.40765,200,740,210,740,210V336H675.43713C611.83508,336,592,375.46667,592,415.95728V512H734L711.3,660H592v357.77777C836.769,979.37012,1024,767.554,1024,512Z"></path>
