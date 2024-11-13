@@ -19,7 +19,7 @@ export default function CardHoverEffectDemo() {
       <h1 className='text-[#00fefb] text-4xl font-bold m-8 text-center'>Nos Services</h1>
       <p className='w-5/6 mx-auto py-4'>Nous proposons une variété de services adaptés à vos exigences. Que vous ayez besoin de développement web, de création d&apos;interfaces contemporaines ou d&apos;optimisation de vos projets numériques, notre expertise est à votre service.
                                         Avec une approche personnalisée, nous assurons des solutions créatives, performantes et en phase avec vos ambitions. Comptez sur notre expérience pour concrétiser vos idées.</p>
-      <div className=" mx-auto px-8 border-b-4 border-[#00fefb]">
+      <div className="border-b-4 border-[#00fefb]">
         <BlueCard />
       </div>
       <WebDev />
