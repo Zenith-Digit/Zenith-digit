@@ -20,6 +20,7 @@ export default function Home() {
      <h2 className="text-[#00fefb] text-4xl font-bold m-8 text-center">Nos Valeurs
      </h2>
      <div className=" md:flex py-4">
+      <div className="md:flex md:flex-col lg:flex-row">
       <div>
         <p className="text-4xl font-bold text-center mt-20 md:mt-0">💡</p>
         <h2 className="text-[#00fefb] text-2xl font-bold md:m-8 text-center">Innovation
@@ -33,7 +34,9 @@ export default function Home() {
      </h2>
      <p className='w-5/6 mx-auto py-4 text-center text-xl'>Nous visons la qualité dans chaque projet, assurant à nos clients des résultats qui dépassent leurs attentes.</p>
       </div>
+        </div>
 
+      <div className="md:flex md:flex-col lg:flex-row">
       <div>
         <p className="text-4xl font-bold text-center mt-20 md:mt-0">🔎</p>
         <h2 className="text-[#00fefb] text-2xl font-bold md:m-8 text-center">Transparence
@@ -46,6 +49,7 @@ export default function Home() {
         <h2 className="text-[#00fefb] text-2xl font-bold md:m-8 text-center">Collaboration
      </h2>
      <p className='w-5/6 mx-auto py-4 text-center text-xl'>Le succès naît de la synergie ; notre équipe travaille en étroite collaboration avec les clients pour comprendre et réaliser leur vision.</p>
+      </div>
       </div>
      </div>
      </div>

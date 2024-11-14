@@ -3,6 +3,7 @@ import Image from 'next/image';
 import "./garde.css"
 import logo from '@/components/loading/logo.png'
 
+
 interface GardePageProps {
   title: string;
 }

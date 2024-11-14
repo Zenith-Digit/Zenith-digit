@@ -10,9 +10,9 @@ import Link from "next/link";
 
 export function Slider() {
   const images = [
-    "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://i.pinimg.com/736x/00/0d/d0/000dd0f9a45b09109ac185d960f83ca6.jpg",
+    "https://i.pinimg.com/736x/1a/fc/0f/1afc0f30b3674e8608d1f50766065b8d.jpg",
+    "https://images.pexels.com/photos/25437427/pexels-photo-25437427/free-photo-of-programmation-et-configuration-du-bureau.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   ];
   return (
     <ImagesSlider className="h-[400px] md:h-[40rem] border-b-4 border-[#00fefb]" images={images}>

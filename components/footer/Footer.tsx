@@ -13,7 +13,7 @@ interface FooterProps {
 const Footer = ({ isDarkMode }: FooterProps) => {
   return (
     <footer className="border-t-4 border-[#00fefb] bottom-0">
-      <div className="mx-auto w-full py-4">
+      <div className="mx-auto w-full pt-4">
         <div className="md:flex md:justify-between px-4">
           {/* Logo */}
           <div className="md:mb-0">
@@ -75,12 +75,9 @@ const Footer = ({ isDarkMode }: FooterProps) => {
         </div>
 
         {/* Separator Line */}
-        <div className="w-full my-5 p-O mx-0">
-          <hr className="border-t border-[#00fefb] m-0 p-0" />
-        </div>
 
         {/* Footer Bottom Text */}
-        <div className="text-center w-full">
+        <div className="text-center w-full bg-[#00fefb] bottom-0 text-black rounded-t-2xl">
           <span className="text-sm sm:text-lg">© 2024 <Link href="/" className="hover:underline">ZenithDigit™</Link>. All Rights Reserved.
           </span>
         </div>
