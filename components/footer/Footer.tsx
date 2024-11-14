@@ -2,7 +2,7 @@ import React from "react";
 import lightLogo from "@/components/navbar/logo.png";
 import darkLogo from "@/components/navbar/logodark.png";
 import Image from "next/image";
-import { FaFacebook, FaLinkedin, FaInstagram, FaEnvelope, FaMobile, FaIdCard } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
