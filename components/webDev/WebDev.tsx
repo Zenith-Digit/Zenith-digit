@@ -10,7 +10,7 @@ const WebDev = () => {
     <div className='border-b-4 border-[#00fefb]'>
         <h2 className="text-[#00fefb] text-4xl font-bold m-8 text-center">Développement web
         </h2>
-        <p className='w-5/6 mx-auto py-8 text-center text-lg md:text-xl lg:text-2xl font-medium leading-relaxed tracking-wide'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias accusantium animi ullam, expedita qui neque nisi perspiciatis reiciendis voluptas repudiandae iste quis non sit facere culpa corporis doloremque facilis optio!</p>
+        <p className='w-5/6 mx-auto py-8 text-center text-lg md:text-xl lg:text-2xl font-medium leading-relaxed tracking-wide'>Nous créons des sites web modernes, efficaces et entièrement adaptables à tous les types d&apos;appareils, qu&apos;il s&apos;agisse de smartphones, de tablettes ou d&apos;ordinateurs. Grâce à notre savoir-faire en développement front-end et back-end, nous proposons des solutions personnalisées qui combinent un design élégant, une expérience utilisateur agréable et des fonctionnalités performantes. Que vous ayez besoin d&apos;un site vitrine, d&apos;une boutique en ligne ou d&apos;une application web</p>
     <div className='lg:flex gap-6 justify-around py-10'>
 {/* mobile devise */}
 

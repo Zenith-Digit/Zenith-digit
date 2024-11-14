@@ -21,31 +21,31 @@ export default function Home() {
      </h2>
      <div className=" md:flex py-4">
       <div>
-        <p className="text-4xl font-bold text-center">💡</p>
-        <h2 className="text-[#00fefb] text-2xl font-bold m-8 text-center">Innovation
+        <p className="text-4xl font-bold text-center mt-20 md:mt-0">💡</p>
+        <h2 className="text-[#00fefb] text-2xl font-bold md:m-8 text-center">Innovation
      </h2>
-     <p className='w-5/6 mx-auto py-4'>Nous nous engageons à rester à la pointe des tendances et technologies pour offrir des solutions modernes et efficaces.</p>
+     <p className='w-5/6 mx-auto py-4 text-center text-xl'>Nous nous engageons à rester à la pointe des tendances et technologies pour offrir des solutions modernes et efficaces.</p>
       </div>
 
       <div>
-        <p className="text-4xl font-bold text-center">🌟</p>
-        <h2 className="text-[#00fefb] text-2xl font-bold m-8 text-center">Excellence
+        <p className="text-4xl font-bold text-center mt-20 md:mt-0">🌟</p>
+        <h2 className="text-[#00fefb] text-2xl font-bold md:m-8 text-center">Excellence
      </h2>
-     <p className='w-5/6 mx-auto py-4'>Nous visons la qualité dans chaque projet, assurant à nos clients des résultats qui dépassent leurs attentes.</p>
+     <p className='w-5/6 mx-auto py-4 text-center text-xl'>Nous visons la qualité dans chaque projet, assurant à nos clients des résultats qui dépassent leurs attentes.</p>
       </div>
 
       <div>
-        <p className="text-4xl font-bold text-center">🔎</p>
-        <h2 className="text-[#00fefb] text-2xl font-bold m-8 text-center">Transparence
+        <p className="text-4xl font-bold text-center mt-20 md:mt-0">🔎</p>
+        <h2 className="text-[#00fefb] text-2xl font-bold md:m-8 text-center">Transparence
      </h2>
-     <p className='w-5/6 mx-auto py-4'>Nous croyons en une communication honnête et transparente avec nos clients, à chaque étape de la collaboration.</p>
+     <p className='w-5/6 mx-auto py-4 text-center text-xl'>Nous croyons en une communication honnête et transparente avec nos clients, à chaque étape de la collaboration.</p>
       </div>
 
       <div>
-        <p className="text-4xl font-bold text-center">🤝</p>
-        <h2 className="text-[#00fefb] text-2xl font-bold m-8 text-center">Collaboration
+        <p className="text-4xl font-bold text-center mt-20 md:mt-0">🤝</p>
+        <h2 className="text-[#00fefb] text-2xl font-bold md:m-8 text-center">Collaboration
      </h2>
-     <p className='w-5/6 mx-auto py-4'>Le succès naît de la synergie ; notre équipe travaille en étroite collaboration avec les clients pour comprendre et réaliser leur vision.</p>
+     <p className='w-5/6 mx-auto py-4 text-center text-xl'>Le succès naît de la synergie ; notre équipe travaille en étroite collaboration avec les clients pour comprendre et réaliser leur vision.</p>
       </div>
      </div>
      </div>

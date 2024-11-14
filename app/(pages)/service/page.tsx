@@ -26,7 +26,7 @@ export default function CardHoverEffectDemo() {
       <div className='border-b-4 border-[#00fefb] '>
         <h2 className="text-[#00fefb] text-4xl font-bold m-8 text-center">Référencement SEO
         </h2>
-        <p className='w-5/6 mx-auto py-8 text-center text-lg md:text-xl lg:text-2xl font-medium leading-relaxed tracking-wide'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias accusantium animi ullam, expedita qui neque nisi perspiciatis reiciendis voluptas repudiandae iste quis non sit facere culpa corporis doloremque facilis optio!</p>
+        <p className='w-5/6 mx-auto py-8 text-center text-lg md:text-xl lg:text-2xl font-medium leading-relaxed tracking-wide'>Améliorez votre présence sur Internet avec un référencement SEO efficace. Générez davantage de visiteurs, renforcez votre classement sur les moteurs de recherche et accroissez votre notoriété pour atteindre un public élargi.</p>
         <div className='flex justify-around md:justify-between w-full md:w-5/6 mx-auto my-10'>
           <svg xmlns="http://www.w3.org/2000/svg" aria-label="Baidu" viewBox="0 0 512 512" id="baidu" className='w-16'>
             <rect width="512" height="512" fill="#fff" rx="15%"></rect>
@@ -51,7 +51,7 @@ export default function CardHoverEffectDemo() {
       <div className='border-b-4 border-[#00fefb]'>
         <h2 className="text-[#00fefb] text-4xl font-bold m-8 text-center">Design UX/UI
         </h2>
-        <p className='w-5/6 mx-auto py-8 text-center text-lg md:text-xl lg:text-2xl font-medium leading-relaxed tracking-wide'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias accusantium animi ullam, expedita qui neque nisi perspiciatis reiciendis voluptas repudiandae iste quis non sit facere culpa corporis doloremque facilis optio!</p>
+        <p className='w-5/6 mx-auto py-8 text-center text-lg md:text-xl lg:text-2xl font-medium leading-relaxed tracking-wide'>Nous concevons des interfaces modernes et intuitives pour offrir à vos utilisateurs une expérience fluide et engageante, tout en renforçant votre image de marque.</p>
         <div className=' md:flex justify-around md:justify-between w-full md:w-5/6 mx-auto my-10'>
           <Image src={wireframe} alt='' className='w-80 mx-auto my-6' />
           <Image src={design} alt='' className='w-80 mx-auto my-6' />
