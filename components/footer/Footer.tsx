@@ -20,7 +20,7 @@ const Footer = ({ isDarkMode }: FooterProps) => {
             <Image
               src={isDarkMode ? darkLogo : lightLogo}  // Changement dynamique du logo
               alt="logo"
-              className="w-24 md:w-40 md:mt-10 mx-auto"
+              className="w-24 md:w-40 mx-auto"
             />
           </div>
 
