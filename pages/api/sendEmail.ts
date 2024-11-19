@@ -31,7 +31,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const info = await transporter.sendMail({
       from: email,
-      to: 'abdoulrazakadamoubello@gmail.com',
+      to: process.env.EMAIL_USER,
       subject: `Nouveau message de ${nom}`,
       text: `Nom: ${nom}\nEmail: ${email}\nMessage: ${message}`,
     });
