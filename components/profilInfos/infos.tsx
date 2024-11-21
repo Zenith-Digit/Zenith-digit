@@ -12,10 +12,10 @@ interface ContactCardProps {
 
 const ContactCard: React.FC<ContactCardProps> = ({ avatar, initials, name, position, email, phone }) => {
     return (
-        <div className="flex items-center flex-col md:flex-row mx-auto space-x-4 bg-gray-900 p-4 rounded-md shadow-md max-w-md">
-            <div className="flex items-center justify-center w-16 h-16 bg-white rounded-full overflow-hidden m-4 md:m-0">
+        <div className="flex items-center flex-col md:flex-row mx-auto space-x-4 bg-gray-900 rounded-md shadow-md max-w-md">
+            <div className="flex items-center justify-center w-full md:w-36 rounded-t-md md:rounded-e-none mb-5 md:m-0  h-48 bg-white md:rounded-s-md  overflow-hidden">
                 {avatar ? (
-                    <Image src={avatar} alt={`${name} avatar`} width={64} height={64} className="rounded-full" />
+                    <Image src={avatar} alt={`${name} avatar`} width={100} height={100} className="w-full" />
                 ) : (
                     <span className="text-[#00fefb] font-bold text-lg">{initials}</span>
                 )}
