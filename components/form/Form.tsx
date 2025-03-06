@@ -13,7 +13,14 @@ export default function Form() {
     setBtn(true)
     // Validation simple
     if (!nom || !email || !message) {
-      alert("Tous les champs sont obligatoires.");
+      toast.error("Tous les champs sont obligatoires.",{
+        position: 'top-right',
+        style:{
+          backgroundColor: "red",
+          color: 'white'
+        }
+      });
+      setBtn(false)
       return;
     }
 
@@ -24,13 +31,13 @@ export default function Form() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ nom, email, message }),
       });
-
+let res = await response.json()
       if (response.ok) {
         setNom('');
         setEmail('');
         setMessage('');
         setBtn(false)
-        toast('Message envoyé avec success !',{
+        toast.success(res.message,{
           position: 'top-right',
           style:{
             backgroundColor: "#00fefb",
@@ -39,7 +46,7 @@ export default function Form() {
         })
       } else {
         setBtn(false)
-        toast('Erreur lors de l\'envoi du message.',{
+        toast.error(res.message,{
           position: 'top-right',
           style:{
             backgroundColor: "red",
@@ -50,7 +57,7 @@ export default function Form() {
     } catch (error) {
       console.error("Erreur :", error);
       setBtn(false)
-      toast('Erreur de connexion au serveur',{
+      toast.error('Erreur de connexion au serveur',{
         position: 'top-right',
         style:{
           backgroundColor: "red",
@@ -79,7 +86,6 @@ export default function Form() {
                 onChange={(e) => setNom(e.target.value)}
                 className="block p-3 w-full text-sm text-gray-900 bg-gray-50 md:h-16 rounded-lg border border-gray-300 shadow-sm focus:ring-black focus:border-x-black dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:shadow-sm-light"
                 placeholder="Dites-nous comment vous appelez-vous ?"
-                required
               />
             </div>
             <div>
@@ -93,7 +99,6 @@ export default function Form() {
                 onChange={(e) => setEmail(e.target.value)}
                 className="shadow-sm border border-gray-300 md:h-16 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="name@exemple.com"
-                required
               />
             </div>
             <div className="sm:col-span-2">
