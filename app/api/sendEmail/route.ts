@@ -1,4 +1,4 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import * as yup from 'yup';
 
@@ -8,19 +8,17 @@ const schema = yup.object().shape({
   message: yup.string().required('Le message est obligatoire'),
 });
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Méthode non autorisée' });
-  }
-
+export async function POST(req: NextRequest) {
   try {
-    const { nom, email, message } = await schema.validate(req.body, { abortEarly: false });
+    const body = await req.json();
+    await schema.validate(body);
+
+    const { nom, email, message } = body;
 
     // Configuration Nodemailer (à remplacer par vos informations)
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
-      port: 587,
-      secure: false,
+      port: 587, // Utilise 465 avec `secure: true`
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -35,10 +33,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       text: `Nom: ${nom}\nEmail: ${email}\nMessage: ${message}`,
     });
 
-    console.log('Message envoyé : %s', info.messageId);
-    res.status(200).json({ message: 'Message envoyé avec succès' });
+    return NextResponse.json({ message: 'Message envoyé avec succès' }, { status: 200 });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'Une erreur est survenue lors de l\'envoi du message' });
+    if (error instanceof yup.ValidationError) {
+      return NextResponse.json({ message: error.message }, { status: 400 });
+    }
+    return NextResponse.json({ message: 'Erreur interne du serveur' }, { status: 500 });
   }
 }
