@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
     });
 
     await transporter.verify();
-    const info = await transporter.sendMail({
+     await transporter.sendMail({
       from: email,
       to: process.env.EMAIL_USER,
       subject: `Nouveau message de ${nom}`,
