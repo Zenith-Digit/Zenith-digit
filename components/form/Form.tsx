@@ -31,7 +31,7 @@ export default function Form() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ nom, email, message }),
       });
-let res = await response.json()
+const res = await response.json()
       if (response.ok) {
         setNom('');
         setEmail('');
