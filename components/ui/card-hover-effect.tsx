@@ -76,8 +76,8 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-8 bg-[#00fefb] border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
-        "flex flex-col justify-between min-h-[350px]",
+        "rounded-2xl h-full w-full p-8 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 group-hover:border-[#00fefb] relative z-20 shadow-lg group-hover:shadow-xl transition-all duration-300",
+        "flex flex-col justify-between min-h-[350px] group-hover:scale-105",
         className
       )}
     >
@@ -96,10 +96,10 @@ export const CardTitle = ({
 }) => {
   return (
   <>
-    <h1 className={cn("text-black font-bold tracking-wide mt-4 text-center uppercase", className)}>
+    <h1 className={cn("text-slate-900 dark:text-white font-bold tracking-wide mt-4 text-center text-xl", className)}>
       {children}
     </h1>
-    <div className=' border-b-2 border-black '></div>
+    <div className='border-b-2 border-[#00fefb] w-16 mx-auto mt-2'></div>
     </>
   );
 };
@@ -114,7 +114,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 text-black tracking-wide leading-relaxed text-center",
+        "mt-4 text-slate-600 dark:text-slate-300 tracking-wide leading-relaxed text-center text-sm",
         className
       )}
     >

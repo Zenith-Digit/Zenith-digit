@@ -41,7 +41,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <body className={`antialiased ${isDarkMode ? "bg-black" : "bg-white"}`}>
         <Navbar />
-        <div className="pt-24">{children}</div> {/* children est typé correctement */}
+        <div className="pt-12">{children}</div> {/* children est typé correctement */}
         <Toaster />
         <ScrollToTop />
         <Footer isDarkMode={isDarkMode} />

@@ -2,53 +2,45 @@
 import React from "react";
 import Form from "@/components/form/Form";
 import GardePage from "@/components/pageGarde/GardePage";
-import ContactCard from "@/components/profilInfos/infos";
-import Logo from  "../../../images/kim.jpg"
+import { ContactIntro } from "@/components/sections/ContactIntro";
+import { ContactTeamSection } from "@/components/sections/ContactTeamSection";
+import { SocialFeedSection } from "@/components/sections/SocialFeedSection";
+import { FAQSection } from "@/components/sections/FAQSection";
 
-export default function BackgroundBeamsDemo() {
+export default function ContactPage() {
   return (
-    <div>
-      <GardePage title={"Contact"} />
-      <h1 className='text-[#00fefb] text-4xl font-bold m-8 text-center'>Nos Contacts</h1>
-      <p className='w-5/6 mx-auto py-8 text-center text-lg md:text-xl lg:text-2xl font-medium leading-relaxed tracking-wide'>Nous sommes disponibles pour répondre à toutes vos interrogations et vous soutenir dans vos projets. Contactez-nous sans hésitation, notre équipe est prête à vous offrir une assistance professionnelle et rapide.
-                                        Vous pouvez nous atteindre par téléphone, par e-mail ou en utilisant le formulaire de contact ci-dessous. Nous nous engageons à vous répondre rapidement.</p>
-    <div className="max-w-screen-lg mt-10 mx-auto">
-      <Form/>
-      <div className="grid gap-6 mb-10 sm:grid-cols-1 px-20 md:px-0 md:grid-cols-2 lg:grid-cols-3">
-      <ContactCard
-        initials="AS"
-        name="Abdoul Salim Ali Maazou"
-        position="Responsable Commercial"
-        email="Abdoulsalim@gmail.com"
-        phone="92 00 00 00"
-      />
-      <ContactCard
-        initials="AS"
-        name="Abdoul Salim Ali Maazou"
-        position="Responsable Commercial"
-        email="Abdoulsalim@gmail.com"
-        phone="92 00 00 00"
-      />
-      <ContactCard
-        initials="AS"
-        avatar={Logo}
-        name="Abdoul Salim Ali Maazou"
-        position="Responsable Commercial"
-        email="Abdoulsalim@gmail.com"
-        phone="92 00 00 00"
-      />
-      </div>
-    </div>
     <>
-    <h2 className="text-[#00fefb] text-4xl font-bold m-8 text-center">Suivez nous</h2>
-    <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 w-5/6 mx-auto my-10">
-    
-      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcodeloccol%2Fposts%2Fpfbid031gYksstWFPfFeBo3mj7Y89okaEwU6WdgNPXrk4tw6rXhdE8CZcjXj2Q9GpPR6vWUl&show_text=true&width=500"  className="w-72 h-[400px] "></iframe>
-  <iframe src="https://www.codeloccol.org/"  className="w-72 h-[400px] "></iframe>
-  <iframe src="https://www.codeloccol.org/"  className="w-72 h-[400px] "></iframe>
-  <iframe src="https://www.codeloccol.org/"  className="w-72 h-[400px] "></iframe>
-    </div>
+      {/* Hero Section */}
+      <GardePage title={"Contact"} />
+      
+      {/* Introduction Section */}
+      <ContactIntro />
+      
+      {/* Contact Form Section */}
+      <section id="contact-form" className="py-20 bg-white dark:bg-slate-900">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+              Envoyez-Nous un Message
+            </h2>
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+              Utilisez le formulaire ci-dessous pour nous faire part de votre projet ou de vos questions. Nous vous répondrons dans les plus brefs délais.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <Form />
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <ContactTeamSection />
+
+      {/* Social Feed Section */}
+      <SocialFeedSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
     </>
-    </div>
   );
 }
