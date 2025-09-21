@@ -68,7 +68,7 @@ export function TechnologiesSection() {
             Technologies & Outils
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Nous utilisons les technologies les plus récentes et les outils les plus performants pour créer des solutions digitales d'exception
+            Nous utilisons les technologies les plus récentes et les outils les plus performants pour créer des solutions digitales d&apos;exception
           </p>
         </motion.div>
 
@@ -121,7 +121,7 @@ export function TechnologiesSection() {
         >
           <div className="bg-gradient-to-r from-[#00fefb]/10 to-cyan-600/10 border border-[#00fefb]/20 rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-semibold text-white mb-4">
-              Toujours à la Pointe de l'Innovation
+              Toujours à la Pointe de l&apos;Innovation
             </h3>
             <p className="text-slate-300 leading-relaxed">
               Notre équipe se forme continuellement aux nouvelles technologies pour vous offrir les solutions les plus modernes et performantes. 

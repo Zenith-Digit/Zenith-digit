@@ -17,7 +17,7 @@ export function VisionSection() {
             Notre Vision & Mission
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Des valeurs qui guident notre engagement envers l'excellence et l'innovation
+            Des valeurs qui guident notre engagement envers l&apos;excellence et l&apos;innovation
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export function VisionSection() {
             </div>
             <h3 className="text-3xl font-bold text-[#00fefb] mb-6">Notre Vision</h3>
             <p className="text-slate-300 text-lg leading-relaxed">
-              Nous aspirons à devenir un partenaire de confiance pour les entreprises, en les dotant des outils et des stratégies qui leur permettent de se démarquer et de grandir durablement dans l'environnement digital.
+              Nous aspirons à devenir un partenaire de confiance pour les entreprises, en les dotant des outils et des stratégies qui leur permettent de se démarquer et de grandir durablement dans l&apos;environnement digital.
             </p>
           </div>
 

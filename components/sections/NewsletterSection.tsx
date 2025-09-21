@@ -12,7 +12,7 @@ export function NewsletterSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Ici vous pouvez ajouter la logique d'inscription à la newsletter
+    // Ici vous pouvez ajouter la logique d&apos;inscription à la newsletter
     setIsSubscribed(true);
     setTimeout(() => {
       setIsSubscribed(false);
@@ -89,7 +89,7 @@ export function NewsletterSection() {
                 ) : (
                   <>
                     <Send className="w-5 h-5 mr-2" />
-                    S'inscrire
+                    S&apos;inscrire
                   </>
                 )}
               </button>

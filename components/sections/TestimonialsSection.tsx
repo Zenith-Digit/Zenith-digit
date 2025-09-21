@@ -70,7 +70,7 @@ export function TestimonialsSection() {
             >
               <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 relative">
                 {/* Quote Icon */}
-                <div className="absolute top-6 right-6 text-[#00fefb]/20 text-4xl font-serif">"</div>
+                <div className="absolute top-6 right-6 text-[#00fefb]/20 text-4xl font-serif">&quot;</div>
                 
                 {/* Rating */}
                 <div className="flex items-center mb-4">
@@ -81,7 +81,7 @@ export function TestimonialsSection() {
 
                 {/* Content */}
                 <p className="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
-                  "{testimonial.content}"
+                  &quot;{testimonial.content}&quot;
                 </p>
 
                 {/* Author */}

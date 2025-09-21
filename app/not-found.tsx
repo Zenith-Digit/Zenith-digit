@@ -29,7 +29,7 @@ export default function NotFound() {
           Page Non Trouvée
         </h2>
         <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-          Désolé, la page que vous recherchez n'existe pas ou a été déplacée. Vérifiez l'URL ou utilisez les liens ci-dessous pour naviguer.
+          Désolé, la page que vous recherchez n&apos;existe pas ou a été déplacée. Vérifiez l&apos;URL ou utilisez les liens ci-dessous pour naviguer.
         </p>
 
         {/* Action Buttons */}
@@ -39,7 +39,7 @@ export default function NotFound() {
             className="group inline-flex items-center px-8 py-4 bg-[#00fefb] text-black font-semibold rounded-full hover:bg-cyan-400 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
           >
             <Home className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
-            Retour à l'Accueil
+            Retour à l&apos;Accueil
           </Link>
           
           <button 
@@ -87,10 +87,10 @@ export default function NotFound() {
         {/* Help Section */}
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
           <h3 className="text-lg font-semibold text-white mb-3">
-            Besoin d'Aide ?
+            Besoin d&apos;Aide ?
           </h3>
           <p className="text-slate-300 text-sm mb-4">
-            Si vous pensez qu'il s'agit d'une erreur, contactez-nous.
+            Si vous pensez qu&apos;il s&apos;agit d&apos;une erreur, contactez-nous.
           </p>
           <a 
             href="mailto:info@zenithdigit.com"

@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Phone, MessageCircle, Calendar } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 // import Logo from "../../../images/kim.jpg";
 
@@ -13,7 +13,7 @@ const teamMembers = [
     email: "abdoulsalim@zenithdigit.com",
     phone: "+227 92 00 00 00",
     avatar: "AS",
-    bio: "Expert en stratégie commerciale avec plus de 5 ans d'expérience dans le domaine digital.",
+    bio: "Expert en stratégie commerciale avec plus de 5 ans d&apos;expérience dans le domaine digital.",
     availability: "Disponible maintenant"
   },
   {
@@ -153,10 +153,10 @@ export function ContactTeamSection() {
         >
           <div className="bg-gradient-to-r from-[#00fefb]/10 to-cyan-600/10 border border-[#00fefb]/20 rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">
-              Besoin d'une Réponse Immédiate ?
+              Besoin d&apos;une Réponse Immédiate ?
             </h3>
             <p className="text-slate-600 dark:text-slate-300 mb-6">
-              Notre équipe est disponible pour répondre à vos questions urgentes. N'hésitez pas à nous contacter directement.
+              Notre équipe est disponible pour répondre à vos questions urgentes. N&apos;hésitez pas à nous contacter directement.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

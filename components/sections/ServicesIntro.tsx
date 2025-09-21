@@ -10,7 +10,7 @@ export function ServicesIntro() {
 
   const benefits = [
     "Solutions sur mesure adaptées à vos besoins",
-    "Équipe d'experts certifiés et expérimentés",
+    "Équipe d&apos;experts certifiés et expérimentés",
     "Support technique 24/7",
     "Livraison dans les délais convenus",
     "Prix compétitifs et transparents",
@@ -74,7 +74,7 @@ export function ServicesIntro() {
             </h1>
 
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-              Nous proposons une variété de services adaptés à vos exigences. Que vous ayez besoin de développement web, de création d'interfaces contemporaines ou d'optimisation de vos projets numériques, notre expertise est à votre service. Avec une approche personnalisée, nous assurons des solutions créatives, performantes et en phase avec vos ambitions.
+              Nous proposons une variété de services adaptés à vos exigences. Que vous ayez besoin de développement web, de création d&apos;interfaces contemporaines ou d&apos;optimisation de vos projets numériques, notre expertise est à votre service. Avec une approche personnalisée, nous assurons des solutions créatives, performantes et en phase avec vos ambitions.
             </p>
 
             {/* Benefits List */}

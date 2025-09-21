@@ -8,7 +8,7 @@ const socialFeatures = [
   {
     icon: Share2,
     title: "Gestion de Contenu",
-    description: "Création et publication de contenus engageants adaptés à chaque plateforme pour maximiser l'engagement de votre audience."
+    description: "Création et publication de contenus engageants adaptés à chaque plateforme pour maximiser l&apos;engagement de votre audience."
   },
   {
     icon: Users,
@@ -91,7 +91,7 @@ export function SocialMediaSection() {
             Réseaux Sociaux
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Nous sommes actifs sur diverses plateformes afin de maintenir le lien avec vous. Abonnez-vous pour être au courant de nos dernières nouvelles, de nos projets en développement, et bien d'autres choses ! Restez à jour, engagez-vous avec nous et intégrez notre communauté.
+            Nous sommes actifs sur diverses plateformes afin de maintenir le lien avec vous. Abonnez-vous pour être au courant de nos dernières nouvelles, de nos projets en développement, et bien d&apos;autres choses ! Restez à jour, engagez-vous avec nous et intégrez notre communauté.
           </p>
         </motion.div>
 
@@ -168,7 +168,7 @@ export function SocialMediaSection() {
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-[#00fefb] mb-2">95%</div>
-            <div className="text-slate-300">Taux d'Engagement</div>
+            <div className="text-slate-300">Taux d&apos;Engagement</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-[#00fefb] mb-2">24/7</div>
