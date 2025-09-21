@@ -21,7 +21,7 @@ const stats = [
   },
   {
     number: "3+",
-    label: "Années d'Expérience",
+    label: "Années d&apos;Expérience",
     description: "Expertise reconnue dans le digital"
   }
 ];
@@ -47,7 +47,7 @@ export function StatsSection() {
             Des Résultats qui Parlent
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Notre expertise se traduit par des chiffres concrets qui témoignent de notre engagement envers l'excellence
+            Notre expertise se traduit par des chiffres concrets qui témoignent de notre engagement envers l&apos;excellence
           </p>
         </motion.div>
 

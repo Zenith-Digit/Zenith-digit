@@ -169,7 +169,7 @@ export function ContactIntro() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
             >
-              <h3 className="text-2xl font-bold text-white mb-6">Heures d'Ouverture</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Heures d&apos;Ouverture</h3>
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-slate-300">Lundi - Vendredi</span>

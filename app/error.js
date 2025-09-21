@@ -35,7 +35,7 @@ export default function GlobalError({ error, reset }) {
           Erreur Serveur
         </h2>
         <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-          Une erreur inattendue s'est produite. Notre équipe technique a été notifiée et travaille à résoudre le problème.
+          Une erreur inattendue s&apos;est produite. Notre équipe technique a été notifiée et travaille à résoudre le problème.
         </p>
 
         {/* Action Buttons */}
@@ -53,17 +53,17 @@ export default function GlobalError({ error, reset }) {
             className="group inline-flex items-center px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-full hover:border-[#00fefb] hover:text-[#00fefb] transition-all duration-300 backdrop-blur-sm"
           >
             <Home className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
-            Retour à l'Accueil
+            Retour à l&apos;Accueil
           </Link>
         </div>
 
         {/* Help Section */}
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
           <h3 className="text-lg font-semibold text-white mb-3">
-            Besoin d'Aide ?
+            Besoin d&apos;Aide ?
           </h3>
           <p className="text-slate-300 text-sm mb-4">
-            Si le problème persiste, n'hésitez pas à nous contacter directement.
+            Si le problème persiste, n&apos;hésitez pas à nous contacter directement.
           </p>
           <a 
             href="mailto:info@zenithdigit.com"

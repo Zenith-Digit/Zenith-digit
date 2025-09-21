@@ -248,7 +248,7 @@ const Footer = ({ isDarkMode }: FooterProps) => {
                     className="flex-1 md:w-64 px-4 py-3 bg-white/10 border border-white/20 rounded-l-full text-white placeholder-slate-400 focus:outline-none focus:border-[#00fefb] transition-colors duration-300"
                   />
                   <button className="px-6 py-3 bg-[#00fefb] text-black font-semibold rounded-r-full hover:bg-cyan-400 transition-colors duration-300">
-                    S'abonner
+                    S&apos;abonner
                   </button>
                 </div>
               </div>
@@ -275,7 +275,7 @@ const Footer = ({ isDarkMode }: FooterProps) => {
                   href="/terms" 
                   className="text-slate-300 hover:text-[#00fefb] transition-colors duration-300"
                 >
-                  Conditions d'Utilisation
+                  Conditions d&apos;Utilisation
                 </Link>
                 <div className="flex items-center text-slate-300">
                   Fait avec <Heart className="w-4 h-4 text-red-500 mx-1" /> au Niger

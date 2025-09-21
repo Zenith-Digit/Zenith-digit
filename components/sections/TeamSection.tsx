@@ -11,7 +11,7 @@ const teamMembers = [
     email: "abdoulsalim@zenithdigit.com",
     phone: "+227 92 00 00 00",
     avatar: "AS",
-    bio: "Expert en stratégie commerciale avec plus de 5 ans d'expérience dans le domaine digital.",
+    bio: "Expert en stratégie commerciale avec plus de 5 ans d&apos;expérience dans le domaine digital.",
     linkedin: "#",
     github: "#"
   },
@@ -21,7 +21,7 @@ const teamMembers = [
     email: "fatima@zenithdigit.com",
     phone: "+227 93 00 00 00",
     avatar: "FO",
-    bio: "Spécialisée en React, Node.js et bases de données. Passionnée par l'innovation technologique.",
+    bio: "Spécialisée en React, Node.js et bases de données. Passionnée par l&apos;innovation technologique.",
     linkedin: "#",
     github: "#"
   },
@@ -31,7 +31,7 @@ const teamMembers = [
     email: "ibrahim@zenithdigit.com",
     phone: "+227 94 00 00 00",
     avatar: "IS",
-    bio: "Créateur d'expériences utilisateur exceptionnelles avec une expertise en design thinking.",
+    bio: "Créateur d&apos;expériences utilisateur exceptionnelles avec une expertise en design thinking.",
     linkedin: "#",
     github: "#"
   },
@@ -51,7 +51,7 @@ const teamMembers = [
     email: "mohamed@zenithdigit.com",
     phone: "+227 96 00 00 00",
     avatar: "MD",
-    bio: "Expert en développement d'applications mobiles natives et cross-platform.",
+    bio: "Expert en développement d&apos;applications mobiles natives et cross-platform.",
     linkedin: "#",
     github: "#"
   },
@@ -89,7 +89,7 @@ export function TeamSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-            Notre Équipe d'Experts
+            Notre Équipe d&apos;Experts
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             Rencontrez les talents passionnés qui transforment vos idées en solutions digitales exceptionnelles
