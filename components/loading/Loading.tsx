@@ -3,6 +3,7 @@ import React from 'react'
 import './loading.css'
 import Image from 'next/image'
 import logo from "./logo.png";
+import { motion } from 'framer-motion';
 
 const Loading = () => {
   return (
@@ -19,11 +20,25 @@ const Loading = () => {
         {/* Logo with modern animation */}
         <div className="relative mb-8">
           <div className="absolute inset-0 bg-gradient-to-r from-[#00fefb] to-cyan-400 rounded-full blur-2xl opacity-30 scale-110"></div>
-          <Image 
+           <motion.div
+                animate={{
+                  y: [0, -30, 0],
+                  rotate: [0, 180, 360],
+                }}
+                transition={{
+                  duration: 10,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="relative z-10 "
+              >
+                 <Image 
             src={logo} 
             alt={'Zenith Digit Logo'} 
-            className='logo w-32 h-32 md:w-40 md:h-40 mx-auto relative z-10'
+            className=' w-32 h-32 md:w-40 md:h-40 mx-auto relative z-10'
           />
+              </motion.div>
+         
         </div>
 
         {/* Loading Text */}

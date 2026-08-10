@@ -121,7 +121,7 @@ const res = await response.json()
                 type="submit"
                 className={`py-3 px-5 md:text-2xl ${btn ? "bg-neutral-500" : "bg-black"} font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800`}
               >
-                {btn? "...." : "Envoyer"}
+                {btn? "En cours..." : "Envoyer"}
               </button>
             </div>
           </form>

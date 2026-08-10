@@ -50,15 +50,7 @@ export function ModernHero() {
             className="text-center lg:text-left"
           >
             {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="inline-flex items-center px-4 py-2 bg-[#00fefb]/10 border border-[#00fefb]/20 rounded-full text-[#00fefb] text-sm font-medium mb-8"
-            >
-              <Star className="w-4 h-4 mr-2 fill-current" />
-              Agence Digitale de Confiance
-            </motion.div>
+           
 
             {/* Main Heading */}
             <motion.h1
@@ -99,10 +91,7 @@ export function ModernHero() {
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
               
-              <button className="group inline-flex items-center px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-full hover:border-[#00fefb] hover:text-[#00fefb] transition-all duration-300 backdrop-blur-sm">
-                <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
-                Voir nos Réalisations
-              </button>
+             
             </motion.div>
 
             {/* Stats */}
@@ -138,21 +127,22 @@ export function ModernHero() {
               {/* Main Logo */}
               <motion.div
                 animate={{
-                  rotate: [0, 5, -5, 0],
+                  y: [0, -30, 0],
+                  rotate: [0, 180, 360],
                 }}
                 transition={{
-                  duration: 8,
+                  duration: 10,
                   repeat: Infinity,
-                  ease: "easeInOut",
+                  ease: "linear",
                 }}
-                className="relative z-10"
+                className="relative z-10 "
               >
                 <Image
                   src={logo}
                   alt="Zenith Digit Logo"
                   width={400}
                   height={400}
-                  className="w-80 h-80 lg:w-96 lg:h-96 object-contain"
+                  className="w-80 h-80 lg:w-96 lg:h-96 object-contain  "
                 />
               </motion.div>
 

@@ -47,7 +47,7 @@ export default function Home() {
       <TestimonialsSection />
 
       {/* Portfolio Section */}
-      <section className="py-20 bg-slate-50 dark:bg-slate-800">
+      {/* <section className="py-20 bg-slate-50 dark:bg-slate-800">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
           <Realiser />
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <FAQSection />
